@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}
+    {{ article.title|striptags}} - {{ SITENAME }}
+{% endblock title %}
+
+{% block metadesc %}
+    {% if article.description %}
+        {{ article.description|e }}
+    {% elif article.summary %}
+        {{ article.summary|striptags }}
+    {% else %}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+
+<section class="conteudo">
+
+    <div class="titulo">
+        <h1>{{ article.title }}</h1>
+        <span class="subtitulo">
+        {% if article.summary %}        
+            {{ article.summary }}
+        {% endif %}
+        </span>
+    </div>
+
+    <div class="informacoes-artigo">
+        Escrito em <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%d de %B de %Y') }}</time><br>
+    </div>
+    
+    <div class="texto-conteudo">
+        {{ article.content }}
+
+        <p class="categoria-e-tag">
+            Categoria: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a><br>
+            {% if article.tags %}
+            Tags:
+                {% for tag in article.tags %}
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            
+            {% endif %}
+        </p>
+    </div>
+</section>
+
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+<!-- https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3 -->
+
+{% if SOCIAL %}
+  {% from 'includes/macros.jinja' import title %}
+
+<!-- Sidebar/Social -->
+<div class="link-sociais">
+  <ul>
+    {% for s in SOCIAL %}
+      {% if s[2] %}
+        {% set name_sanitized = s[2]|lower|replace('+','-plus')|replace(' ','-') %}
+      {% else %}
+        {% set name_sanitized = s[0]|lower|replace('+','-plus')|replace(' ','-') %}
+      {% endif %}
+      {% if name_sanitized in ['flickr', 'slideshare', 'instagram', 'spotify', 'stack-overflow', 'weibo', 'line-chart', 'home', 'user', 'users', 'envelope', 'envelope-o', 'stack-exchange', 'hacker-news', 'gitlab', 'vk', 'behence'] %}
+        {% set iconattributes = '"fab fa-' ~ name_sanitized ~ '"' %}
+      {% else %}
+        {% set iconattributes = '"fab fa-' ~ name_sanitized ~ '"' %}
+      {% endif %}
+    <li class="list-group-item"><a href="{{ s[1] }}"><i class={{ iconattributes }}></i></a></li>
+    {% endfor %}
+  </ul>
+</div>
+<!-- End Sidebar/Social -->
+{% endif %}

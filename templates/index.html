@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="conteudo">
+
+    {% for article in articles_page.object_list %}
+    <div class="post-list">
+        <article class="post-overview pure-g">
+            <div class="pure-u-1-4">
+                <time datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%d, %b %Y') }}</time>
+            </div>
+            <div class="titulo-post-list pure-u-3-4">
+                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+                <div class="excerpt">{{ article.summary }}</div>
+            </div>
+        </article>  
+    </div>
+    {% endfor %}
+
+</section>
+
+{% endblock content %}

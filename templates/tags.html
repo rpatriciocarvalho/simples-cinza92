@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="conteudo">
+
+    <div class="titulo-listas">
+        <h1>Tags</h1>
+    </div>
+
+    <ul>
+    {% for (tag, articles) in tags %}
+        <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }} ({{ articles|count }} artigos)</a></li>
+    {% endfor %}
+    </ul>
+</section>
+
+{% endblock content %}

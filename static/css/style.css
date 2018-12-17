@@ -1,0 +1,211 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+    margin-bottom: 3em;
+}
+
+.menu {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.link-sociais {
+    margin-top: 1em;
+}
+
+.link-sociais ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link-sociais ul li{
+    display: inline-block;
+    padding: 0.5em 0;
+}
+
+.link-sociais ul li a {
+    font-size: 1.2em;
+    color: black;
+    padding: 2em 0.5em;
+}
+
+.link-sociais ul li a:hover{
+    color: #696969;
+}
+
+.menu-heading {
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+    text-align: center;
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+.menu-heading h1 {
+    text-transform: uppercase;
+    margin-bottom: 0.2em;
+}
+
+.menu-heading h2 {
+    color: gray;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.menu-link-heading{
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu-link-heading:hover{
+    color: #696969;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-item {
+        float: none;
+        display: block!important;
+        padding: 0.5em 1.2em!important;
+    }  
+}
+
+.menu-item {
+    display: inline;
+    padding: 0em 1.2em;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu-link:hover {
+    color: #696969;
+    text-decoration: underline;
+}
+
+.conteudo {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.conteudo a{
+    color: black;
+}
+
+.conteudo a:hover {
+    color: #696969;
+}
+
+.rodape{
+    text-align: center;
+    padding: 1em;
+    color: gray;
+}
+
+.rodape a{
+    color: gray;
+}
+
+.rodape a:hover{
+    color: #555555;
+}
+
+.titulo {
+    text-align: center;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.titulo-listas {
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    font-size: 0.8em;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.todas-categorias {
+    display: block;
+    text-align: right;
+    font-size: 1.2em;
+    padding: 1.2em 0;
+}
+
+.subtitulo {
+    color: gray;
+    text-emphasis: e;
+    font-size: 0.8em;
+}
+
+.informacoes-artigo {
+    text-align: right;
+    font-family: "Roboto", Corbel, Avenir, "Lucida Grande", "Lucida Sans", sans-serif;
+    font-size: 1em;
+    padding : 1em;
+}
+
+.texto-conteudo{
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+.post-list {
+    font-family: Palatino, "Palatino Linotype", "Book Antiqua", "Hoefler Text", Georgia, "Lucida Bright", Cambria, Times, "Times New Roman", serif;
+    margin: 2em 0;
+}
+
+.post-overview time {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.titulo-post-list h2{
+    font-size: 1.2em;
+    padding: 0 0 0.6em 0;
+    margin: 0;
+}
+
+.titulo-post-list h2 a{
+    color: black;
+}
+
+.titulo-post-list h2 a:hover{
+    color: #696969;
+}
+.categoria-e-tag{
+    font-size: 0.8em;
+    padding-left: 1em;
+}
+
+.texto-conteudo blockquote{
+    font-size: 0.8em;
+    color: #636363;
+    border: 1px solid #cfcfcf;
+    background-color: #f8f8f8;
+    padding: 1em;
+    margin-right: 0;
+}
