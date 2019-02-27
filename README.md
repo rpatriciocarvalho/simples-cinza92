@@ -3,4 +3,8 @@ A simple theme for [Pelican Static Site Generator, Powered by Python](https://bl
 
 ## Screenshot
 
-![Screenshot](screenshot01.png)
+### Home page
+![Screenshot01](screenshot01.png)
+
+### Post page
+![Screenshot02](screenshot02.png)
